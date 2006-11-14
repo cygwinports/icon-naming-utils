@@ -1,5 +1,5 @@
 category: X11
-requires: perl
+requires: perl perl-XML-Simple
 sdesc: "Icon Naming Specification compatibility script"
 ldesc: "icon-naming-utils is a script for maintaining backwards
 compatibility with current desktop icon themes, while migrating to the

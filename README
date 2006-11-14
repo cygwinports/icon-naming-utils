@@ -5,14 +5,15 @@ current desktop icon themes, while migrating to the names specified in the
 Icon Naming Specification.
 
 Runtime requirements:
-  perl
+  perl-5.8.7-5
+  perl-XML-Simple-2.14-1
 
 Build requirements:
-  cygwin-1.5.19-4
-  cygport-0.1.7-1
+  cygwin-1.5.21-2
+  cygport-0.2.6-1
   gawk-3.1.5-2
-  make-3.80-1
-  sed-4.1.4-1
+  make-3.81-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://tango-project.org/Tango_Icon_Library
@@ -23,27 +24,27 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack icon-naming-utils-0.7.1-X-src.tar.bz2
+  unpack icon-naming-utils-0.8.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./icon-naming-utils-0.7.1-X.cygport all
+  cygport ./icon-naming-utils-0.8.1-X.cygport all
 
 This will create:
-  /usr/src/icon-naming-utils-0.7.1-X-src.tar.bz2
-  /usr/src/icon-naming-utils-0.7.1-X.tar.bz2
+  /usr/src/icon-naming-utils-0.8.1-X-src.tar.bz2
+  /usr/src/icon-naming-utils-0.8.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/sbin/icon-name-mapping
-  /usr/share/doc/Cygwin/icon-naming-utils-0.7.1.README
-  /usr/share/doc/icon-naming-utils-0.7.1/AUTHORS
-  /usr/share/doc/icon-naming-utils-0.7.1/COPYING
-  /usr/share/doc/icon-naming-utils-0.7.1/ChangeLog
-  /usr/share/doc/icon-naming-utils-0.7.1/INSTALL
-  /usr/share/doc/icon-naming-utils-0.7.1/README
+  /usr/share/doc/Cygwin/icon-naming-utils-0.8.1.README
+  /usr/share/doc/icon-naming-utils-0.8.1/AUTHORS
+  /usr/share/doc/icon-naming-utils-0.8.1/COPYING
+  /usr/share/doc/icon-naming-utils-0.8.1/ChangeLog
+  /usr/share/doc/icon-naming-utils-0.8.1/INSTALL
+  /usr/share/doc/icon-naming-utils-0.8.1/README
   /usr/share/dtds/legacy-icon-mapping.dtd
   /usr/share/icon-naming-utils/legacy-icon-mapping.xml
   /usr/share/pkgconfig/icon-naming-utils.pc
@@ -51,6 +52,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.8.1-1 -----
+Version bump.
 
 ----- version 0.7.1-1 -----
 Initial release for Cygwin.
