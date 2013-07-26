@@ -1,9 +1,0 @@
-DESCRIPTION="Utilities to help with the transition to the new freedesktop.org naming scheme"
-HOMEPAGE="http://tango.freedesktop.org/"
-SRC_URI="http://tango.freedesktop.org/releases/${P}.tar.gz"
-
-src_compile() {
-	cd ${B}
-	cygconf
-	cygmake
-}

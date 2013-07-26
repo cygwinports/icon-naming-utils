@@ -1,0 +1,16 @@
+NAME="icon-naming-utils"
+VERSION=0.8.90
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Icon Naming Specification compatibility script"
+DESCRIPTION="icon-naming-utils is a script for maintaining backwards
+compatibility with current desktop icon themes, while migrating to the
+names specified in the Icon Naming Specification."
+HOMEPAGE="http://tango.freedesktop.org/"
+SRC_URI="http://tango.freedesktop.org/releases/${NAME}-${VERSION}.tar.gz"
+
+src_compile() {
+	cd ${B}
+	cygconf
+	cygmake
+}
