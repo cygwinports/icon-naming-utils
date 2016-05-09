@@ -9,6 +9,8 @@ names specified in the Icon Naming Specification."
 HOMEPAGE="http://tango.freedesktop.org/"
 SRC_URI="http://tango.freedesktop.org/releases/${NAME}-${VERSION}.tar.gz"
 
+ARCH=noarch
+
 src_compile() {
 	cd ${B}
 	cygconf
